@@ -8,7 +8,6 @@ public class BeeCrowd1037 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     double number = input.nextDouble();
-    input.close();
     if (number < 0.0 || number > 100.0) {
       System.out.println("Fora de intervalo");
     } else if (number <= 25.0000) {
@@ -20,5 +19,7 @@ public class BeeCrowd1037 {
     } else {
       System.out.println("Intervalo (75,100]");
     }
+
+    input.close();
   }
 }
